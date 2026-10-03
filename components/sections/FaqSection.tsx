@@ -27,8 +27,8 @@ export function FaqSection({
   title = "Frequently Asked Questions",
   subtitle = "Everything you need to know about our car rentals, driver allocation, and billing policies in Ahmedabad.",
 }: FaqSectionProps) {
-  // First item open by default
-  const [openId, setOpenId] = useState<string | null>(faqs[0]?.id || null);
+  // All FAQ items closed by default
+  const [openId, setOpenId] = useState<string | null>(null);
   const shouldReduceMotion = useReducedMotion();
 
   const toggleItem = (itemId: string) => {

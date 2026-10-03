@@ -39,130 +39,91 @@ function FleetCarCard({
 }: {
   car: Car;
 }) {
-  const shouldReduceMotion = useReducedMotion();
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
-  const springX = useSpring(x, { stiffness: 220, damping: 25 });
-  const springY = useSpring(y, { stiffness: 220, damping: 25 });
-
-  const rotateX = useTransform(springY, [-0.5, 0.5], ["5deg", "-5deg"]);
-  const rotateY = useTransform(springX, [-0.5, 0.5], ["-5deg", "5deg"]);
-
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (
-      !shouldReduceMotion &&
-      typeof window !== "undefined" &&
-      window.matchMedia("(pointer: fine)").matches
-    ) {
-      const rect = e.currentTarget.getBoundingClientRect();
-      const xPct = (e.clientX - rect.left) / rect.width - 0.5;
-      const yPct = (e.clientY - rect.top) / rect.height - 0.5;
-      x.set(xPct);
-      y.set(yPct);
-    }
-  };
-
-  const handleMouseLeave = () => {
-    x.set(0);
-    y.set(0);
-  };
-
   return (
     <motion.div
       layout
       variants={{
-        hidden: { opacity: 0, y: 25, scale: 0.96 },
+        hidden: { opacity: 0, y: 25 },
         visible: {
           opacity: 1,
           y: 0,
-          scale: 1,
           transition: { duration: 0.45, ease: "easeOut" },
         },
       }}
       id={`fleet-${car.slug}`}
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
-      style={
-        !shouldReduceMotion
-          ? { rotateX, rotateY, transformPerspective: 1000 }
-          : undefined
-      }
-      className="group flex flex-col h-full bg-white rounded-3xl border border-slate-200/90 shadow-[0_4px_20px_-4px_rgba(10,31,92,0.06)] hover:shadow-[0_20px_45px_-12px_rgba(201,150,46,0.25)] hover:border-gold/50 transition-all duration-300 hover:-translate-y-1.5 overflow-hidden relative"
+      className="group flex flex-col justify-between h-full bg-white rounded-2xl p-4 sm:p-5 border border-slate-200/80 shadow-[0_4px_20px_-4px_rgba(10,31,92,0.06)] hover:shadow-[0_20px_35px_-8px_rgba(10,31,92,0.15)] hover:border-slate-300 transition-all duration-300 hover:-translate-y-1 relative"
     >
-      {/* Image Area with 16:10 ratio & Studio Spotlight */}
-      <div className="relative p-3 sm:p-3.5 bg-slate-50/60">
-        <div className="relative overflow-hidden rounded-2xl">
-          <CarImage
-            src={car.image}
-            carName={car.name}
-            variant="spotlight"
-            hasFloorShadow={true}
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1536px) 33vw, 25vw"
-          />
-        </div>
-      </div>
-
-      {/* Card Content */}
-      <div className="p-5 sm:p-6 flex flex-col flex-1 justify-between gap-5">
-        <div>
-          {/* Type Chip & Seats */}
-          <div className="flex items-center justify-between gap-2 mb-2">
-            <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] sm:text-[11px] font-bold tracking-wider uppercase bg-slate-100 text-slate-700 border border-slate-200/70">
-              {car.type}
-            </span>
-
-            <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-navy/5 text-navy text-xs font-semibold">
-              <Users className="w-3.5 h-3.5 text-navy/70" />
+      <div>
+        {/* Step 2 & 4: Image Area with aspect-video, next/image fill, object-cover object-center, scale-105 duration-500 */}
+        <CarImage
+          src={car.image}
+          carName={car.name}
+          alt={`${car.name} ${car.seats} seater for rent in Ahmedabad`}
+          sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 33vw"
+        >
+          {/* Glass badges on the image */}
+          {/* Top-left: seat count ("17 Seats") */}
+          <div className="absolute top-3 left-3 z-10 pointer-events-none">
+            <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white/80 backdrop-blur text-xs font-semibold text-slate-800 shadow-sm border border-white/40">
+              <Users className="w-3.5 h-3.5 text-slate-600" />
               <span>{car.seats} Seats</span>
             </div>
           </div>
 
-          {/* Car Name */}
-          <h3 className="font-serif text-lg sm:text-xl font-bold text-navy-deep group-hover:text-gold-dark transition-colors line-clamp-2 min-h-[3rem] flex items-center">
-            {car.name}
-          </h3>
+          {/* Top-right: category chip */}
+          <div className="absolute top-3 right-3 z-10 pointer-events-none">
+            <span className="inline-flex items-center px-2.5 py-1 rounded-full bg-white/80 backdrop-blur text-xs font-semibold text-slate-800 shadow-sm border border-white/40">
+              {car.type}
+            </span>
+          </div>
+        </CarImage>
+
+        {/* Car Name */}
+        <h3 className="font-serif text-lg sm:text-xl font-bold text-[#0A1F5C] mt-4 mb-1 line-clamp-1">
+          {car.name}
+        </h3>
+        <p className="text-xs text-slate-500 font-medium">
+          Sanitized AC · Verified Chauffeur
+        </p>
+      </div>
+
+      {/* Bottom Pricing & Actions */}
+      <div className="pt-4 mt-5 border-t border-slate-100 flex items-center justify-between gap-3">
+        <div>
+          <span className="text-[10px] sm:text-[11px] uppercase tracking-wider text-slate-400 block font-semibold">
+            Starting at
+          </span>
+          <div className="flex items-baseline">
+            <span className="text-2xl sm:text-3xl font-sans font-bold text-[#0A1F5C] tracking-tight">
+              ₹{car.ratePerKm}
+            </span>
+            <span className="text-xs sm:text-sm font-semibold text-slate-500 ml-1">
+              /Km
+            </span>
+          </div>
         </div>
 
-        {/* Bottom Pricing & Actions */}
-        <div className="pt-4 border-t border-slate-100 flex items-center justify-between gap-3">
-          <div>
-            <span className="text-[10px] sm:text-[11px] uppercase tracking-wider text-slate-400 block font-semibold">
-              Starting at
-            </span>
-            <div className="flex items-baseline gap-0.5">
-              <span className="text-2xl sm:text-3xl font-sans font-bold text-navy-deep tracking-tight">
-                ₹{car.ratePerKm}
-              </span>
-              <span className="text-xs sm:text-sm font-semibold text-slate-500">
-                /Km
-              </span>
-            </div>
-          </div>
+        <div className="flex items-center gap-2">
+          {/* Round Call Button */}
+          <a
+            href={siteConfig.phoneTel}
+            aria-label={`Call to book ${car.name}`}
+            title={`Call to book ${car.name}`}
+            className="w-10 h-10 rounded-full border border-slate-200 bg-white hover:bg-slate-50 text-[#0A1F5C] shadow-sm flex items-center justify-center transition-all duration-200 hover:scale-105 hover:border-gold shrink-0 cursor-pointer"
+          >
+            <Phone className="w-4 h-4 text-[#0A1F5C]" />
+          </a>
 
-          <div className="flex items-center gap-2">
-            {/* Call Icon Button */}
-            <Button
-              variant="outline"
-              size="sm"
-              href={siteConfig.phoneTel}
-              className="h-10 w-10 p-0 rounded-xl border-slate-300 hover:border-gold hover:text-gold-dark text-slate-700 shadow-sm shrink-0"
-              aria-label={`Call to book ${car.name}`}
-              title={`Call to book ${car.name}`}
-            >
-              <Phone className="w-4 h-4 text-gold-dark" />
-            </Button>
-
-            {/* Book Now Button */}
-            <Button
-              variant="primary"
-              size="sm"
-              href={`/booking?car=${car.slug}`}
-              rightIcon={<ArrowRight className="w-3.5 h-3.5" />}
-              className="h-10 px-4 rounded-xl text-xs sm:text-sm font-bold shadow-md shadow-gold/20"
-            >
-              Book Now
-            </Button>
-          </div>
+          {/* Book Now Button */}
+          <Button
+            variant="primary"
+            size="sm"
+            href={`/booking?car=${car.slug}`}
+            rightIcon={<ArrowRight className="w-3.5 h-3.5" />}
+            className="h-10 px-4 rounded-xl text-xs sm:text-sm font-bold shadow-md shadow-gold/20"
+          >
+            Book Now
+          </Button>
         </div>
       </div>
     </motion.div>
@@ -252,15 +213,15 @@ export function FleetSection({
           </div>
         )}
 
-        {/* Filter Pill Tabs */}
+        {/* Filter Pill Tabs - Guaranteed Single Line on Mobile */}
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.25 }}
-          className="flex items-center justify-center mb-12"
+          className="flex items-center justify-center mb-10 sm:mb-12 px-2"
         >
-          <div className="inline-flex flex-wrap items-center justify-center gap-1.5 p-1.5 rounded-full bg-white border border-slate-200 shadow-sm max-w-full">
+          <div className="inline-flex flex-nowrap items-center justify-start sm:justify-center gap-1 sm:gap-1.5 p-1 sm:p-1.5 rounded-full bg-white border border-slate-200 shadow-sm max-w-full overflow-x-auto no-scrollbar scroll-smooth">
             {FLEET_FILTER_TABS.map((tab) => {
               const isActive = activeFilter === tab;
               return (
@@ -269,7 +230,7 @@ export function FleetSection({
                   type="button"
                   onClick={() => setActiveFilter(tab)}
                   className={cn(
-                    "relative px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition-colors duration-200 select-none cursor-pointer",
+                    "relative px-3 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold transition-colors duration-200 select-none cursor-pointer whitespace-nowrap shrink-0",
                     isActive
                       ? "text-slate-950"
                       : "text-slate-600 hover:text-navy hover:bg-slate-50"
@@ -361,7 +322,7 @@ export function FleetSection({
                   },
                 },
               }}
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 sm:gap-8 items-stretch [perspective:1000px]"
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 items-stretch"
             >
               {filteredCars.map((car: Car) => (
                 <FleetCarCard

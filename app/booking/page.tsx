@@ -716,13 +716,11 @@ function BookingFormContent() {
           </h3>
 
           {/* Car Image Preview */}
-          <div className="rounded-2xl overflow-hidden bg-slate-50 mb-4 border border-slate-100">
+          <div className="mb-4">
             <CarImage
               src={selectedCar.image}
               carName={selectedCar.name}
-              variant="spotlight"
-              hasFloorShadow={true}
-              priority
+              alt={`${selectedCar.name} for rent in Ahmedabad`}
               sizes="(max-width: 1024px) 100vw, 40vw"
             />
           </div>

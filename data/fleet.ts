@@ -41,7 +41,7 @@ export const fleet: Car[] = [
     seats: 4,
     features: [],
     ratePerKm: 11,
-    image: "/images/fleet/swift-dzire.webp",
+    image: "/images/fleet/swift-dzire-v2.webp",
     filterGroup: "Sedan",
   },
   {
@@ -51,7 +51,7 @@ export const fleet: Car[] = [
     seats: 6,
     features: [],
     ratePerKm: 13,
-    image: "/images/fleet/maruti-suzuki-ertiga.webp",
+    image: "/images/fleet/maruti-suzuki-ertiga-v2.webp",
     filterGroup: "SUV",
   },
   {
@@ -61,7 +61,7 @@ export const fleet: Car[] = [
     seats: 7,
     features: [],
     ratePerKm: 15,
-    image: "/images/fleet/toyota-innova.webp",
+    image: "/images/fleet/toyota-innova-v2.webp",
     filterGroup: "SUV",
   },
   {
@@ -71,7 +71,7 @@ export const fleet: Car[] = [
     seats: 9,
     features: [],
     ratePerKm: 16,
-    image: "/images/fleet/chevrolet-tavera.webp",
+    image: "/images/fleet/chevrolet-tavera-v2.webp",
     filterGroup: "SUV",
   },
   {
@@ -81,7 +81,7 @@ export const fleet: Car[] = [
     seats: 7,
     features: [],
     ratePerKm: 18,
-    image: "/images/fleet/toyota-innova-crysta.webp",
+    image: "/images/fleet/toyota-innova-crysta-v2.webp",
     filterGroup: "SUV",
   },
   {
@@ -91,7 +91,7 @@ export const fleet: Car[] = [
     seats: 11,
     features: [],
     ratePerKm: 23,
-    image: "/images/fleet/tempo-traveller-11.webp",
+    image: "/images/fleet/tempo-traveller-11-v2.webp",
     filterGroup: "10+ Seaters",
   },
   {
@@ -101,7 +101,7 @@ export const fleet: Car[] = [
     seats: 14,
     features: [],
     ratePerKm: 24,
-    image: "/images/fleet/tempo-traveller-14.webp",
+    image: "/images/fleet/tempo-traveller-14-v2.webp",
     filterGroup: "10+ Seaters",
   },
   {
@@ -111,7 +111,7 @@ export const fleet: Car[] = [
     seats: 17,
     features: [],
     ratePerKm: 25,
-    image: "/images/fleet/tempo-traveller-17.webp",
+    image: "/images/fleet/tempo-traveller-17-v2.webp",
     filterGroup: "10+ Seaters",
   },
   {
@@ -121,7 +121,7 @@ export const fleet: Car[] = [
     seats: 20,
     features: [],
     ratePerKm: 30,
-    image: "/images/fleet/tempo-traveller-20.webp",
+    image: "/images/fleet/tempo-traveller-20-v2.webp",
     filterGroup: "10+ Seaters",
   },
 ];

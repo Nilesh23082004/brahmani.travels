@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import {
   Crown,
@@ -11,8 +10,6 @@ import {
   Users,
   Coins,
   Sparkles,
-  Plane,
-  CheckCircle2,
 } from "lucide-react";
 import { whyUsItems } from "@/data/whyUs";
 import { Container } from "@/components/ui/Container";
@@ -97,97 +94,50 @@ export function WhyChooseUs({
           )}
         </div>
 
-        {/* Brand Paragraph + Visual Graphic Two-Column Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-16 sm:mb-20">
-          {/* Left Column: Brand Paragraph with Exact Wording and Highlights */}
-          <motion.div
-            initial={shouldReduceMotion ? { opacity: 1 } : { opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="lg:col-span-7 flex flex-col justify-center"
-          >
-            <div className="relative p-6 sm:p-8 rounded-3xl bg-white border border-slate-200/90 shadow-md">
-              {/* Gold vertical accent bar */}
-              <div className="absolute top-8 left-0 w-1.5 h-16 bg-gradient-to-b from-gold-light via-gold to-gold-dark rounded-r-full" />
+        {/* Brand Paragraph Block */}
+        <motion.div
+          initial={shouldReduceMotion ? { opacity: 1 } : { opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="max-w-4xl mx-auto mb-16 sm:mb-20"
+        >
+          <div className="relative p-6 sm:p-10 rounded-3xl bg-white border border-slate-200/90 shadow-md">
+            {/* Gold vertical accent bar */}
+            <div className="absolute top-8 left-0 w-1.5 h-16 bg-gradient-to-b from-gold-light via-gold to-gold-dark rounded-r-full" />
 
-              <div className="pl-3 sm:pl-4">
-                <p className="text-slate-700 text-base sm:text-lg leading-relaxed max-w-[65ch]">
-                  At Brahmani Travels, we don&apos;t just arrange journeys—we make
-                  travelling{" "}
-                  <span className="font-bold text-gold-dark">
-                    easy, comfortable, and worry-free
-                  </span>
-                  . We understand that every traveller looks for a service they
-                  can trust, which is why we focus on providing a reliable,
-                  convenient, and customer-first travel experience from start to
-                  finish. Whether you&apos;re planning a family vacation, a
-                  business trip, a pilgrimage, or a memorable getaway, we are
-                  committed to making every part of your journey smooth and
-                  hassle-free. With personalized service, dependable travel
-                  solutions, transparent communication, and dedicated customer
-                  support, we ensure you can travel with confidence and peace of
-                  mind. Your time, comfort, and satisfaction matter to us, and we
-                  always strive to go the extra mile to make your journey truly
-                  worthwhile. Ready to travel? Book your journey with Brahmani
-                  Travels today and let us take care of the road ahead.
-                </p>
-
-                {/* Final sentence highlighted prominently */}
-                <div className="mt-5 pt-4 border-t border-slate-100 flex items-center gap-2">
-                  <Sparkles className="w-5 h-5 text-gold-dark shrink-0" />
-                  <span className="font-serif font-bold text-lg sm:text-xl text-navy-deep tracking-wide">
-                    Your Journey, Our Responsibility.
-                  </span>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-
-          {/* Right Column: Car Visual with Elegant Badge */}
-          <motion.div
-            initial={shouldReduceMotion ? { opacity: 1 } : { opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="lg:col-span-5 relative"
-          >
-            <div className="relative mx-auto max-w-md aspect-square rounded-3xl bg-white border border-slate-200/90 p-6 flex flex-col items-center justify-center overflow-hidden shadow-md">
-              {/* Subtle ambient spotlight */}
-              <div className="absolute inset-0 bg-gradient-to-b from-gold/5 via-slate-50 to-transparent pointer-events-none" />
-
-              {/* Central Vehicle Image */}
-              <div className="relative z-10 w-full flex flex-col items-center">
-                <div className="relative w-56 sm:w-64 aspect-[16/10] drop-shadow-[0_12px_20px_rgba(0,0,0,0.12)]">
-                  <Image
-                    src="/images/fleet/toyota-innova-crysta.webp"
-                    alt="Brahmani Travels Innova Crysta"
-                    fill
-                    className="object-contain"
-                    sizes="280px"
-                  />
-                </div>
-                <div className="w-48 h-3 -mt-2 bg-slate-900/10 blur-md rounded-full" />
-              </div>
-
-              {/* Tour & Airport Ready Badge */}
-              <div className="absolute top-6 right-6 z-20 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-50 border border-slate-200/90 shadow-sm">
-                <Plane className="w-3.5 h-3.5 text-gold-dark transform -rotate-12" />
-                <span className="text-[10px] font-bold tracking-wider uppercase text-slate-700">
-                  Tour & Airport Ready
+            <div className="pl-3 sm:pl-4">
+              <p className="text-slate-700 text-base sm:text-lg leading-relaxed">
+                At Brahmani Travels, we don&apos;t just arrange journeys—we make
+                travelling{" "}
+                <span className="font-bold text-gold-dark">
+                  easy, comfortable, and worry-free
                 </span>
-              </div>
+                . We understand that every traveller looks for a service they
+                can trust, which is why we focus on providing a reliable,
+                convenient, and customer-first travel experience from start to
+                finish. Whether you&apos;re planning a family vacation, a
+                business trip, a pilgrimage, or a memorable getaway, we are
+                committed to making every part of your journey smooth and
+                hassle-free. With personalized service, dependable travel
+                solutions, transparent communication, and dedicated customer
+                support, we ensure you can travel with confidence and peace of
+                mind. Your time, comfort, and satisfaction matter to us, and we
+                always strive to go the extra mile to make your journey truly
+                worthwhile. Ready to travel? Book your journey with Brahmani
+                Travels today and let us take care of the road ahead.
+              </p>
 
-              {/* 100% Punctual Guarantee Badge */}
-              <div className="absolute bottom-6 left-6 z-20 flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-50 border border-slate-200/90 shadow-sm">
-                <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                <span className="text-xs font-bold text-slate-800">
-                  100% Punctual Guarantee
+              {/* Final sentence highlighted prominently */}
+              <div className="mt-6 pt-5 border-t border-slate-100 flex items-center gap-2">
+                <Sparkles className="w-5 h-5 text-gold-dark shrink-0" />
+                <span className="font-serif font-bold text-lg sm:text-xl text-navy-deep tracking-wide">
+                  Your Journey, Our Responsibility.
                 </span>
               </div>
             </div>
-          </motion.div>
-        </div>
+          </div>
+        </motion.div>
 
         {/* 6 Feature Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">

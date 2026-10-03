@@ -65,7 +65,7 @@ export function Hero() {
 
   return (
     <section className="relative min-h-[100svh] flex flex-col justify-between bg-gradient-to-b from-[#F8FAFC] via-[#FFFFFF] to-[#F1F5F9] text-slate-900 overflow-hidden pt-28 sm:pt-36 pb-14 sm:pb-20 border-b border-slate-200/70">
-      {/* Soft warm ambient lighting for prestige (no dark/sci-fi blobs) */}
+      {/* Soft warm ambient lighting for prestige */}
       <div
         className="pointer-events-none absolute top-10 right-1/4 w-[40rem] h-[40rem] bg-gradient-to-b from-gold/10 via-gold/5 to-transparent rounded-full blur-3xl -z-10"
         aria-hidden="true"
@@ -96,7 +96,7 @@ export function Hero() {
               variants={containerVariants}
               initial="hidden"
               animate="visible"
-              className="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] text-navy-deep"
+              className="font-serif text-3xl sm:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.15] text-navy-deep"
             >
               {headlineWords.map((word, index) => (
                 <motion.span
@@ -104,8 +104,8 @@ export function Hero() {
                   variants={wordVariants}
                   className={
                     word.isGold
-                      ? "inline-block mr-3 sm:mr-4 bg-gradient-to-r from-gold-dark via-gold to-gold-dark bg-clip-text text-transparent"
-                      : "inline-block mr-3 sm:mr-4 text-navy-deep"
+                      ? "inline-block mr-2 sm:mr-4 bg-gradient-to-r from-gold-dark via-gold to-gold-dark bg-clip-text text-transparent"
+                      : "inline-block mr-2 sm:mr-4 text-navy-deep"
                   }
                 >
                   {word.text}
@@ -118,7 +118,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.25 }}
-              className="text-base sm:text-lg md:text-xl text-slate-600 leading-relaxed max-w-xl font-normal"
+              className="text-sm sm:text-lg md:text-xl text-slate-600 leading-relaxed max-w-xl font-normal"
             >
               Premium rides, affordable prices. Punctual drivers, sanitized
               cars and honest fares, from daily city rides to outstation tours across Gujarat.
@@ -129,7 +129,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.35 }}
-              className="flex flex-wrap items-center gap-4 pt-2 w-full sm:w-auto"
+              className="flex flex-wrap items-center gap-3 sm:gap-4 pt-2 w-full sm:w-auto"
             >
               <Button
                 variant="primary"
@@ -137,7 +137,7 @@ export function Hero() {
                 href="#book-your-ride"
                 onClick={scrollToBooking}
                 rightIcon={<ArrowRight className="w-5 h-5" />}
-                className="w-full sm:w-auto text-base font-bold shadow-lg shadow-gold/25"
+                className="w-full sm:w-auto text-sm sm:text-base font-bold shadow-lg shadow-gold/25"
               >
                 Book Your Ride
               </Button>
@@ -147,7 +147,7 @@ export function Hero() {
                 size="lg"
                 href={siteConfig.phoneTel}
                 leftIcon={<Phone className="w-4 h-4 text-navy" />}
-                className="w-full sm:w-auto text-base font-bold bg-white hover:bg-slate-50 border-slate-300 text-navy hover:text-navy-deep hover:border-navy shadow-sm"
+                className="w-full sm:w-auto text-sm sm:text-base font-bold bg-white hover:bg-slate-50 border-slate-300 text-navy hover:text-navy-deep hover:border-navy shadow-sm"
               >
                 Call {siteConfig.phone}
               </Button>
@@ -171,45 +171,37 @@ export function Hero() {
             >
               {/* Floating Badge 1: Price */}
               <div className="absolute -top-3 left-2 sm:-left-4 z-20 animate-float [animation-delay:0s]">
-                <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-2xl bg-white/95 backdrop-blur-md border border-slate-200/90 text-navy-deep shadow-lg shadow-slate-900/5 text-xs sm:text-sm font-bold">
-                  <Sparkles className="w-4 h-4 text-gold-dark" />
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-2xl bg-white/95 backdrop-blur-md border border-slate-200/90 text-navy-deep shadow-lg shadow-slate-900/5 text-xs sm:text-sm font-bold">
+                  <Sparkles className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-gold-dark" />
                   <span>From ₹11/Km</span>
                 </div>
               </div>
 
               {/* Floating Badge 2: Sanitized Daily */}
-              <div className="absolute top-1/3 -right-2 sm:-right-4 z-20 animate-float [animation-delay:1.5s]">
-                <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-2xl bg-white/95 backdrop-blur-md border border-slate-200/90 text-navy-deep shadow-lg shadow-slate-900/5 text-xs sm:text-sm font-bold">
-                  <ShieldCheck className="w-4 h-4 text-emerald-600" />
+              <div className="absolute top-1/3 right-2 sm:-right-4 z-20 animate-float [animation-delay:1.5s]">
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-2xl bg-white/95 backdrop-blur-md border border-slate-200/90 text-navy-deep shadow-lg shadow-slate-900/5 text-xs sm:text-sm font-bold">
+                  <ShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-600" />
                   <span>Sanitized Daily</span>
                 </div>
               </div>
 
               {/* Floating Badge 3: On-Time Guarantee */}
-              <div className="absolute -bottom-3 left-6 sm:left-10 z-20 animate-float [animation-delay:3s]">
-                <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-2xl bg-white/95 backdrop-blur-md border border-slate-200/90 text-navy-deep shadow-lg shadow-slate-900/5 text-xs sm:text-sm font-bold">
-                  <Clock className="w-4 h-4 text-gold-dark" />
+              <div className="absolute -bottom-3 left-4 sm:left-10 z-20 animate-float [animation-delay:3s]">
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-2xl bg-white/95 backdrop-blur-md border border-slate-200/90 text-navy-deep shadow-lg shadow-slate-900/5 text-xs sm:text-sm font-bold">
+                  <Clock className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-gold-dark" />
                   <span>On-Time Guarantee</span>
                 </div>
               </div>
 
               {/* Hero Featured Car Image */}
-              <div className="relative z-10 w-full drop-shadow-[0_16px_24px_rgba(0,0,0,0.12)]">
+              <div className="relative z-10 w-full overflow-hidden rounded-3xl border border-slate-200/80 shadow-2xl bg-white">
                 <CarImage
                   src={featuredCar.image}
                   carName={featuredCar.name}
                   priority
-                  variant="transparent"
-                  containerClassName="border-0 bg-transparent shadow-none"
-                  className="scale-105"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
-
-              {/* Natural Floor Shadow */}
-              <div
-                className="pointer-events-none -mt-4 sm:-mt-6 mx-auto h-6 sm:h-8 w-4/5 rounded-full bg-slate-900/20 blur-xl"
-                aria-hidden="true"
-              />
             </motion.div>
           </div>
         </div>
@@ -225,3 +217,4 @@ export function Hero() {
     </section>
   );
 }
+
