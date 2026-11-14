@@ -30,7 +30,9 @@ export const viewport: Viewport = {
   maximumScale: 5,
 };
 
-const rawGsc = process.env.NEXT_PUBLIC_GSC_VERIFICATION || "";
+const rawGsc =
+  process.env.NEXT_PUBLIC_GSC_VERIFICATION ||
+  "0lgy6At4rX-rvsZkAn9B--otELfj6Zq7rVhovvrS4Hk";
 const gscMatch = rawGsc.match(/content=["']?([^"'>\s]+)["']?/i);
 const gscToken = gscMatch ? gscMatch[1] : rawGsc.trim();
 
