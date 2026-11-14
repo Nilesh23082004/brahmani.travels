@@ -101,6 +101,9 @@ function FleetCarCard({
               /Km
             </span>
           </div>
+          <span className="text-[10px] sm:text-[11px] text-amber-700 font-semibold block mt-0.5">
+            *Discount negotiable on call
+          </span>
         </div>
 
         <div className="flex items-center gap-2">
@@ -154,7 +157,7 @@ export function FleetSection({
   return (
     <section
       id={id}
-      className={cn("relative py-20 bg-slate-50/70 overflow-hidden", className)}
+      className={cn("relative py-12 sm:py-16 md:py-20 bg-slate-50/70 overflow-hidden", className)}
     >
       {/* Ambient background blur elements */}
       <div
@@ -165,7 +168,7 @@ export function FleetSection({
       <Container>
         {/* Section Header */}
         {showHeader && (
-          <div className="text-center max-w-3xl mx-auto mb-12">
+          <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -219,7 +222,7 @@ export function FleetSection({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.25 }}
-          className="flex items-center justify-center mb-10 sm:mb-12 px-2"
+          className="flex items-center justify-center mb-6 sm:mb-8 md:mb-10 px-2"
         >
           <div className="inline-flex flex-nowrap items-center justify-start sm:justify-center gap-1 sm:gap-1.5 p-1 sm:p-1.5 rounded-full bg-white border border-slate-200 shadow-sm max-w-full overflow-x-auto no-scrollbar scroll-smooth">
             {FLEET_FILTER_TABS.map((tab) => {

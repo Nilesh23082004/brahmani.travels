@@ -19,10 +19,10 @@ export function CtaBanner({ id = "cta-banner", className }: CtaBannerProps) {
   return (
     <section
       id={id}
-      className={cn("relative py-20 sm:py-24 overflow-hidden", className)}
+      className={cn("relative py-10 sm:py-14 md:py-18 overflow-hidden", className)}
     >
       <Container>
-        <div className="relative rounded-3xl overflow-hidden bg-gradient-to-b from-white via-slate-50 to-amber-50/20 border border-slate-200/90 p-8 sm:p-12 lg:p-16 shadow-xl text-center">
+        <div className="relative rounded-3xl overflow-hidden bg-gradient-to-b from-white via-slate-50 to-amber-50/20 border border-slate-200/90 p-6 sm:p-10 lg:p-14 shadow-xl text-center">
           {/* Subtle soft gold ambient glow */}
           <div
             className="pointer-events-none absolute -top-20 left-1/2 -translate-x-1/2 w-96 h-40 bg-gold/10 rounded-full blur-3xl"

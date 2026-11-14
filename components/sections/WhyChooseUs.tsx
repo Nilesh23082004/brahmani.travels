@@ -50,13 +50,13 @@ export function WhyChooseUs({
     <section
       id={id}
       className={cn(
-        "relative py-20 sm:py-24 bg-slate-50/70 text-slate-900 border-t border-slate-200/80 overflow-hidden",
+        "relative py-12 sm:py-16 md:py-20 bg-slate-50/70 text-slate-900 border-t border-slate-200/80 overflow-hidden",
         className
       )}
     >
       <Container className="relative z-10">
         {/* Header Block with Eyebrow and Gold Accent Line */}
-        <div className="text-center max-w-3xl mx-auto mb-14 sm:mb-18">
+        <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
           <motion.div
             initial={shouldReduceMotion ? { opacity: 1 } : { opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -100,9 +100,9 @@ export function WhyChooseUs({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="max-w-4xl mx-auto mb-16 sm:mb-20"
+          className="max-w-4xl mx-auto mb-8 sm:mb-12"
         >
-          <div className="relative p-6 sm:p-10 rounded-3xl bg-white border border-slate-200/90 shadow-md">
+          <div className="relative p-5 sm:p-8 rounded-3xl bg-white border border-slate-200/90 shadow-md">
             {/* Gold vertical accent bar */}
             <div className="absolute top-8 left-0 w-1.5 h-16 bg-gradient-to-b from-gold-light via-gold to-gold-dark rounded-r-full" />
 

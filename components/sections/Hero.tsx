@@ -67,7 +67,7 @@ export function Hero() {
   };
 
   return (
-    <section className="relative min-h-[100svh] flex flex-col justify-between bg-gradient-to-b from-[#F8FAFC] via-[#FFFFFF] to-[#F1F5F9] text-slate-900 overflow-hidden pt-28 sm:pt-36 pb-14 sm:pb-20 border-b border-slate-200/70">
+    <section className="relative min-h-[100svh] flex flex-col justify-between bg-gradient-to-b from-[#F8FAFC] via-[#FFFFFF] to-[#F1F5F9] text-slate-900 overflow-hidden pt-24 sm:pt-32 pb-10 sm:pb-16 border-b border-slate-200/70">
       {/* Soft warm ambient lighting for prestige */}
       <div
         className="pointer-events-none absolute top-10 right-1/4 w-[40rem] h-[40rem] bg-gradient-to-b from-gold/10 via-gold/5 to-transparent rounded-full blur-3xl -z-10"

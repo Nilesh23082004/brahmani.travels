@@ -99,7 +99,7 @@ export function ContactForm({ className }: ContactFormProps) {
   return (
     <div
       className={cn(
-        "bg-white rounded-3xl border border-slate-200/90 shadow-xl shadow-navy/5 p-6 sm:p-8 relative overflow-hidden",
+        "bg-white rounded-3xl border border-slate-200/90 shadow-xl shadow-navy/5 p-4 sm:p-6 md:p-8 relative overflow-hidden",
         className
       )}
     >

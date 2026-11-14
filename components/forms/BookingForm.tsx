@@ -198,7 +198,7 @@ export function BookingForm({
   return (
     <div
       className={cn(
-        "bg-white rounded-3xl border border-slate-200/90 shadow-xl shadow-navy/5 p-6 sm:p-10 relative overflow-hidden",
+        "bg-white rounded-2xl sm:rounded-3xl border border-slate-200/90 shadow-xl shadow-navy/5 p-4 sm:p-8 md:p-10 relative overflow-hidden",
         className
       )}
     >
@@ -333,12 +333,17 @@ export function BookingForm({
 
           {/* Row 1: Vehicle Selector */}
           <div>
-            <label
-              htmlFor="carSlug"
-              className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5"
-            >
-              Select Vehicle <span className="text-rose-500">*</span>
-            </label>
+            <div className="flex items-center justify-between mb-1.5">
+              <label
+                htmlFor="carSlug"
+                className="block text-xs font-bold uppercase tracking-wider text-slate-700"
+              >
+                Select Vehicle <span className="text-rose-500">*</span>
+              </label>
+              <span className="text-[11px] text-amber-700 font-semibold bg-amber-50 border border-amber-200/60 px-2 py-0.5 rounded-md">
+                *Discount negotiable on call
+              </span>
+            </div>
             <div className="relative">
               <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
                 <CarIcon className="w-4 h-4" />

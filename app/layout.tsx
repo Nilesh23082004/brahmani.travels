@@ -185,7 +185,7 @@ export default function RootLayout({
           <Navbar />
 
           {/* Main Content Area */}
-          <div className="flex-1 flex flex-col w-full pb-16 sm:pb-0 overflow-x-hidden">
+          <div className="flex-1 flex flex-col w-full overflow-x-hidden">
             {children}
           </div>
 

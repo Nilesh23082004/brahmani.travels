@@ -39,7 +39,7 @@ export function FaqSection({
     <section
       id={id}
       className={cn(
-        "relative py-20 sm:py-24 bg-gradient-to-b from-white via-slate-50/70 to-white overflow-hidden",
+        "relative py-12 sm:py-16 md:py-20 bg-gradient-to-b from-white via-slate-50/70 to-white overflow-hidden",
         className
       )}
     >
@@ -52,7 +52,7 @@ export function FaqSection({
       <Container>
         {/* Header Block */}
         {showHeader && (
-          <div className="text-center max-w-3xl mx-auto mb-14 sm:mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
             <motion.div
               initial={shouldReduceMotion ? { opacity: 1 } : { opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}

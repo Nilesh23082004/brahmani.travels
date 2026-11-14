@@ -732,7 +732,12 @@ function BookingFormContent() {
           {/* Pricing & Features */}
           <div className="space-y-3 pt-2">
             <div className="flex items-baseline justify-between border-b border-slate-100 pb-3">
-              <span className="text-xs text-slate-500 font-medium">Standard Fare</span>
+              <div>
+                <span className="text-xs text-slate-500 font-medium block">Standard Fare</span>
+                <span className="text-[10px] text-amber-700 font-semibold bg-amber-50 border border-amber-200/60 px-1.5 py-0.5 rounded mt-0.5 inline-block">
+                  *Discount negotiable on call
+                </span>
+              </div>
               <div className="flex items-baseline gap-1">
                 <span className="text-3xl font-sans font-bold text-navy-deep">
                   ₹{selectedCar.ratePerKm}
