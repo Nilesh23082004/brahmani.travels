@@ -56,28 +56,29 @@ export const siteConfig: SiteConfig = {
   name: "Brahmani Travels",
   tagline: "Your Journey, Our Responsibility.",
   footerTagline:
-    "Your trusted travel partner for safe and reliable journeys. Explore the world with us!",
+    "Ahmedabad's trusted cab, taxi & car rental service. Available 24/7 for city rides, airport transfers, outstation trips, and group tours across Gujarat and India.",
   description:
-    "Premium car rental and tour booking agency based in Ahmedabad, Gujarat. Luxury cabs, corporate rentals, outstation trips, and tailored travel experiences across India.",
+    "Best cab, taxi & car rental service in Ahmedabad from ₹11/km. Swift Dzire, Innova Crysta, Tempo Traveller & buses. 24/7 service from Nava Naroda, Ahmedabad, Gujarat.",
   contactPerson: "Rajesh Prajapati",
   phone: "+91 89801 79677",
   phoneTel: "tel:+918980179677",
   phoneRaw: "+918980179677",
   whatsAppUrl: "https://wa.me/918980179677",
   alternatePhone: "+91 89801 79677",
-  email: "contact@brahmanitravels.com",
+  email: "brahmanitravels@gmail.com",
   address: {
     line: "B-105 Nand Vatika, Near Mevada Green Party Plot, Nava Naroda",
     city: "Ahmedabad",
     state: "Gujarat",
     country: "India",
     pincode: "382330",
-    full: "B-105 Nand Vatika, Near Mevada Green Party Plot, Nava Naroda, Ahmedabad, Gujarat - 382330",
-    googleMapsUrl: "https://maps.google.com/?q=Nand+Vatika+Nava+Naroda+Ahmedabad+Gujarat+382330",
+    full: "B-105 Nand Vatika, Near Mevada Green Party Plot, Nava Naroda, Ahmedabad, Gujarat – 382330",
+    googleMapsUrl:
+      "https://maps.google.com/?q=Nand+Vatika+Nava+Naroda+Ahmedabad+Gujarat+382330",
   },
   businessHours: [
     {
-      days: "Monday - Sunday",
+      days: "Monday – Sunday",
       hours: "24/7 Available for Bookings & Support",
     },
   ],
@@ -87,6 +88,7 @@ export const siteConfig: SiteConfig = {
     { title: "Booking", href: "/booking" },
     { title: "FAQ", href: "/faq" },
     { title: "About Us", href: "/about" },
+    { title: "Contact", href: "/contact" },
   ],
   socialLinks: [
     {
@@ -96,12 +98,12 @@ export const siteConfig: SiteConfig = {
     },
     {
       platform: "Instagram",
-      href: "https://instagram.com/brahmanitravels",
+      href: "https://www.instagram.com/brahmanitravels",
       iconName: "Instagram",
     },
     {
       platform: "Facebook",
-      href: "https://facebook.com/brahmanitravels",
+      href: "https://www.facebook.com/brahmanitravels",
       iconName: "Facebook",
     },
     {
@@ -134,7 +136,7 @@ export interface TrustStat {
 export const trustStats: TrustStat[] = [
   { label: "Happy Customers", value: 5000, suffix: "+" },
   { label: "Trips Completed", value: 10000, suffix: "+" },
-  { label: "Vehicles in Fleet", value: 9, suffix: "" },
+  { label: "Vehicles in Fleet", value: 10, suffix: "" },
   { label: "Years Experience", value: 26, suffix: "+" },
 ];
 
@@ -147,4 +149,3 @@ export const trustMarqueeItems: string[] = [
   "Transparent Pricing",
   "24/7 Support",
 ];
-

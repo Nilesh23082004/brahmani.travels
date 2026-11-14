@@ -15,11 +15,14 @@ export function Hero() {
     fleet.find((car) => car.slug === "toyota-innova-crysta") || fleet[0];
 
   const headlineWords = [
-    { text: "Luxury", isGold: true },
-    { text: "Experience", isGold: true },
-    { text: "at", isGold: false },
-    { text: "Taxi", isGold: false },
-    { text: "Rates.", isGold: false },
+    { text: "Best", isGold: false },
+    { text: "Cab,", isGold: true },
+    { text: "Taxi", isGold: true },
+    { text: "&", isGold: false },
+    { text: "Car", isGold: false },
+    { text: "Rental", isGold: false },
+    { text: "in", isGold: false },
+    { text: "Ahmedabad", isGold: true },
   ];
 
   const containerVariants = {
@@ -120,8 +123,7 @@ export function Hero() {
               transition={{ duration: 0.5, delay: 0.25 }}
               className="text-sm sm:text-lg md:text-xl text-slate-600 leading-relaxed max-w-xl font-normal"
             >
-              Premium rides, affordable prices. Punctual drivers, sanitized
-              cars and honest fares, from daily city rides to outstation tours across Gujarat.
+              Book dependable cabs &amp; car rental in Ahmedabad from ₹11/km. Punctual verified chauffeurs, sanitized AC cars, and 24/7 service from Nava Naroda for local city travel, airport drops, and outstation tours across India.
             </motion.p>
 
             {/* CTAs */}

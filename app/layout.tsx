@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
+import { SITE_URL } from "@/lib/constants";
 import { siteConfig } from "@/data/site";
 import { Navbar, Footer, FloatingActions } from "@/components/layout";
 import { SmoothScrollProvider } from "@/components/providers/SmoothScrollProvider";
@@ -29,59 +31,79 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://brahmanitravels.com"),
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: `${siteConfig.name} | ${siteConfig.tagline}`,
-    template: `%s | ${siteConfig.name}`,
+    default: "Brahmani Travels | Best Cab, Taxi & Car Rental in Ahmedabad – From ₹11/km",
+    template: `%s | Brahmani Travels Ahmedabad`,
   },
   description: siteConfig.description,
   keywords: [
     "cab in Ahmedabad",
     "taxi in Ahmedabad",
-    "car rental in Ahmedabad",
-    "tempo traveller in Ahmedabad",
-    "Nava Naroda car rental",
+    "car rental Ahmedabad",
+    "taxi service Ahmedabad",
+    "cab service Ahmedabad",
+    "tempo traveller on rent Ahmedabad",
     "taxi service Nava Naroda",
-    "cab hire Nava Naroda",
-    "Brahmani Travels",
-    "Swift Dzire rental Ahmedabad",
-    "Innova Crysta rental Ahmedabad",
+    "best travels Ahmedabad",
     "outstation taxi Ahmedabad",
-    "wedding car rental Ahmedabad",
-    "Ahmedabad to Udaipur cab",
-    "Ahmedabad to Somnath Dwarka tour",
-    "Rajesh Prajapati Brahmani Travels",
+    "airport taxi Ahmedabad",
+    "Innova Crysta on rent Ahmedabad",
+    "one way taxi Ahmedabad",
+    "Brahmani Travels",
   ],
   authors: [{ name: siteConfig.contactPerson }],
   creator: siteConfig.name,
   icons: {
-    icon: [{ url: "/logo.png", type: "image/png" }],
-    apple: [{ url: "/logo.png", type: "image/png" }],
-    shortcut: ["/logo.png"],
+    icon: [
+      { url: "/logo-icon.png", type: "image/png" },
+      { url: "/logo.png", type: "image/png" },
+    ],
+    apple: [{ url: "/logo.png", type: "image/png", sizes: "180x180" }],
+    shortcut: ["/logo-icon.png"],
   },
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://brahmanitravels.com",
-    title: `${siteConfig.name} — ${siteConfig.tagline}`,
+    url: SITE_URL,
+    title: "Brahmani Travels | Best Cab, Taxi & Car Rental in Ahmedabad",
     description: siteConfig.description,
     siteName: siteConfig.name,
     images: [
       {
-        url: "/logo.png",
-        width: 512,
-        height: 512,
-        alt: `${siteConfig.name} Logo`,
+        url: `${SITE_URL}/og-image.png`,
+        width: 1200,
+        height: 630,
+        alt: "Brahmani Travels – Best Cab & Car Rental Service in Ahmedabad, Gujarat",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} — ${siteConfig.tagline}`,
+    title: "Brahmani Travels | Best Cab, Taxi & Car Rental in Ahmedabad",
     description: siteConfig.description,
-    images: ["/logo.png"],
+    images: [`${SITE_URL}/og-image.png`],
+  },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GSC_VERIFICATION,
+  },
+  alternates: {
+    canonical: SITE_URL,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
   },
 };
+
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 export default function RootLayout({
   children,
@@ -90,12 +112,30 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="en-IN"
       className={`${playfairDisplay.variable} ${plusJakartaSans.variable} scroll-smooth`}
     >
       <body className="min-h-screen flex flex-col bg-soft-bg text-navy-deep font-sans antialiased selection:bg-gold selection:text-navy-deep overflow-x-hidden">
         {/* Structured Data for SEO */}
         <JsonLd />
+
+        {/* Google Analytics 4 */}
+        {GA_ID && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="gtag-init" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${GA_ID}', { page_path: window.location.pathname });
+              `}
+            </Script>
+          </>
+        )}
 
         {/* Branded First-Load Splash Intro */}
         <BrandedPageIntro />

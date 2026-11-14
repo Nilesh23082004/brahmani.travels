@@ -3,11 +3,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { aboutContent } from "@/data/about";
 import { siteConfig } from "@/data/site";
+import { SITE_URL } from "@/lib/constants";
 import { Container } from "@/components/ui/Container";
 import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
 import { CtaBanner } from "@/components/sections/CtaBanner";
 import { Button } from "@/components/ui/Button";
 import { ContactForm } from "@/components/forms/ContactForm";
+import { Breadcrumb } from "@/components/seo/Breadcrumb";
 import {
   Sparkles,
   MapPin,
@@ -21,9 +23,29 @@ import {
 import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 
 export const metadata: Metadata = {
-  title: `About Us | ${siteConfig.name}`,
+  title: `About Brahmani Travels | Premier Cab & Car Rental Agency in Ahmedabad`,
   description:
-    "Learn about Brahmani Travels, Ahmedabad's trusted car rental agency. Providing verified AC cabs, Tempo Travellers, and personalized tour packages across Gujarat and India.",
+    "Learn about Brahmani Travels, founded by Rajesh Prajapati in Nava Naroda, Ahmedabad. 25+ years experience, verified drivers, sanitized cabs from ₹11/km.",
+  alternates: {
+    canonical: `${SITE_URL}/about`,
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: `${SITE_URL}/about`,
+    title: `About Brahmani Travels | Ahmedabad's Trusted Travel Agency`,
+    description:
+      "Learn about Brahmani Travels, Ahmedabad's trusted car rental agency. Providing verified AC cabs, Tempo Travellers, and tour packages.",
+    siteName: siteConfig.name,
+    images: [
+      {
+        url: `${SITE_URL}/og-image.png`,
+        width: 1200,
+        height: 630,
+        alt: "About Brahmani Travels Ahmedabad",
+      },
+    ],
+  },
 };
 
 export default function AboutPage() {
@@ -36,16 +58,11 @@ export default function AboutPage() {
       <section className="relative overflow-hidden bg-gradient-to-b from-slate-100 via-white to-slate-50 py-16 sm:py-20 text-slate-900 text-center border-b border-slate-200/80">
         <Container className="relative z-10">
           {/* Breadcrumb */}
-          <nav
-            aria-label="Breadcrumb"
-            className="flex items-center justify-center gap-2 text-xs text-slate-500 mb-4 font-semibold"
-          >
-            <Link href="/" className="hover:text-gold-dark transition-colors">
-              Home
-            </Link>
-            <span className="text-slate-400">/</span>
-            <span className="text-gold-dark">About Us</span>
-          </nav>
+          <div className="flex justify-center mb-4">
+            <Breadcrumb
+              items={[{ label: "Home", href: "/" }, { label: "About Us" }]}
+            />
+          </div>
 
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gold/10 border border-gold/30 text-xs font-bold uppercase tracking-widest text-gold-dark mb-3">
             <Sparkles className="w-3.5 h-3.5 text-gold-dark" />

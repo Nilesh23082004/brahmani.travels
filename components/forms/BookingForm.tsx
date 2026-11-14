@@ -24,6 +24,7 @@ import { siteConfig } from "@/data/site";
 import { bookingInputSchema, BookingInputValues } from "@/lib/validations/booking";
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
+import { trackBookingSubmit, trackWhatsAppClick } from "@/lib/analytics";
 
 export interface BookingFormProps {
   initialCarSlug?: string;
@@ -143,6 +144,9 @@ export function BookingForm({
       const targetWhatsAppUrl = `https://wa.me/${cleanBusinessNumber}?text=${encodeURIComponent(
         messageText
       )}`;
+
+      trackBookingSubmit(selectedCar.name);
+      trackWhatsAppClick("booking_form_submit");
 
       setWhatsAppUrl(targetWhatsAppUrl);
       setSubmittedData({

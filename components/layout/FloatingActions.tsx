@@ -5,9 +5,10 @@ import { motion } from "framer-motion";
 import { Phone } from "lucide-react";
 import { siteConfig } from "@/data/site";
 import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
+import { trackCallClick, trackWhatsAppClick } from "@/lib/analytics";
 
 export function FloatingActions() {
-  const whatsAppPrefilledUrl = `https://wa.me/918980179677?text=${encodeURIComponent(
+  const whatsAppPrefilledUrl = `${siteConfig.whatsAppUrl}?text=${encodeURIComponent(
     "Hi Brahmani Travels, I want to book a car."
   )}`;
 
@@ -16,10 +17,10 @@ export function FloatingActions() {
       aria-label="Floating quick actions"
       className="fixed bottom-5 right-4 sm:bottom-6 sm:right-6 z-40 flex flex-col items-end gap-3 pointer-events-none"
     >
-
       {/* Gold "Call Now" Floating Pill */}
       <motion.a
         href={siteConfig.phoneTel}
+        onClick={() => trackCallClick("floating_button")}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.3 }}
@@ -58,15 +59,16 @@ export function FloatingActions() {
 
           <motion.a
             href={whatsAppPrefilledUrl}
+            onClick={() => trackWhatsAppClick("floating_button")}
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.3, duration: 0.3 }}
-            aria-label="Chat with Brahmani Travels on WhatsApp"
-            className="relative flex items-center justify-center h-13 w-13 sm:h-14 sm:w-14 rounded-full bg-gradient-to-tr from-[#1EBE5D] via-[#25D366] to-[#4CE584] hover:brightness-105 text-white shadow-[0_8px_25px_-4px_rgba(37,211,102,0.55)] border-2 border-white/40 transition-all hover:scale-110 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
+            aria-label="Direct WhatsApp Chat with Brahmani Travels"
+            className="relative flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white shadow-xl shadow-emerald-600/30 transition-all duration-300 hover:scale-110 active:scale-95 focus:outline-none focus-visible:ring-4 focus-visible:ring-emerald-400/50"
           >
-            <WhatsAppIcon className="w-7 h-7 sm:w-8 sm:h-8 drop-shadow-sm fill-white" />
+            <WhatsAppIcon className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
           </motion.a>
         </div>
       </div>

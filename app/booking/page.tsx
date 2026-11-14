@@ -31,6 +31,7 @@ import { Container } from "@/components/ui/Container";
 import { CarImage } from "@/components/ui/CarImage";
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
+import { trackBookingSubmit, trackWhatsAppClick } from "@/lib/analytics";
 
 // Minimal skeleton for Suspense boundary
 function BookingLoading() {
@@ -151,6 +152,9 @@ function BookingFormContent() {
       const targetWhatsAppUrl = `https://wa.me/${cleanBusinessNumber}?text=${encodeURIComponent(
         messageText
       )}`;
+
+      trackBookingSubmit(selectedCar.name);
+      trackWhatsAppClick("booking_page_submit");
 
       setWhatsAppUrl(targetWhatsAppUrl);
       setSubmittedData({

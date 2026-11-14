@@ -2,8 +2,10 @@ import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/data/site";
+import { SITE_URL } from "@/lib/constants";
 import { Container } from "@/components/ui/Container";
 import { ContactForm } from "@/components/forms/ContactForm";
+import { Breadcrumb } from "@/components/seo/Breadcrumb";
 import {
   Sparkles,
   MapPin,
@@ -16,9 +18,29 @@ import { Button } from "@/components/ui/Button";
 import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 
 export const metadata: Metadata = {
-  title: `Contact Us | ${siteConfig.name}`,
+  title: `Contact Brahmani Travels Ahmedabad | 24/7 Cab & Taxi Booking`,
   description:
-    "Get in touch with Brahmani Travels in Nava Naroda, Ahmedabad. 24/7 taxi booking, outstation tour planning, and tempo traveller rental enquiries.",
+    "Contact Brahmani Travels at B-105 Nand Vatika, Nava Naroda, Ahmedabad. 24/7 booking support for local cabs, airport transfers, outstation taxis & buses. Call +91 89801 79677.",
+  alternates: {
+    canonical: `${SITE_URL}/contact`,
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: `${SITE_URL}/contact`,
+    title: `Contact Brahmani Travels Ahmedabad | 24/7 Cab Booking`,
+    description:
+      "Contact Brahmani Travels at B-105 Nand Vatika, Nava Naroda, Ahmedabad. Call +91 89801 79677.",
+    siteName: siteConfig.name,
+    images: [
+      {
+        url: `${SITE_URL}/og-image.png`,
+        width: 1200,
+        height: 630,
+        alt: "Contact Brahmani Travels",
+      },
+    ],
+  },
 };
 
 export default function ContactPage() {
@@ -30,16 +52,11 @@ export default function ContactPage() {
       {/* Hero Header Banner */}
       <section className="relative overflow-hidden bg-gradient-to-b from-slate-100 via-white to-slate-50 py-16 text-slate-900 text-center border-b border-slate-200/80">
         <Container className="relative z-10">
-          <nav
-            aria-label="Breadcrumb"
-            className="flex items-center justify-center gap-2 text-xs text-slate-500 mb-4 font-semibold"
-          >
-            <Link href="/" className="hover:text-gold-dark transition-colors">
-              Home
-            </Link>
-            <span className="text-slate-400">/</span>
-            <span className="text-gold-dark">Contact</span>
-          </nav>
+          <div className="flex justify-center mb-4">
+            <Breadcrumb
+              items={[{ label: "Home", href: "/" }, { label: "Contact Us" }]}
+            />
+          </div>
 
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gold/10 border border-gold/30 text-xs font-bold uppercase tracking-widest text-gold-dark mb-3">
             <Sparkles className="w-3.5 h-3.5 text-gold-dark" />
