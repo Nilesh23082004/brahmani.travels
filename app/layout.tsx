@@ -30,11 +30,11 @@ export const viewport: Viewport = {
   maximumScale: 5,
 };
 
-const rawGsc =
-  process.env.NEXT_PUBLIC_GSC_VERIFICATION ||
-  "0lgy6At4rX-rvsZkAn9B--otELfj6Zq7rVhovvrS4Hk";
-const gscMatch = rawGsc.match(/content=["']?([^"'>\s]+)["']?/i);
-const gscToken = gscMatch ? gscMatch[1] : rawGsc.trim();
+const REAL_GSC_TOKEN = "0lgy6At4rX-rvsZkAn9B--otELfj6Zq7rVhovvrS4Hk";
+const envGsc = process.env.NEXT_PUBLIC_GSC_VERIFICATION || "";
+const gscMatch = envGsc.match(/content=["']?([^"'>\s]+)["']?/i);
+const parsedGsc = gscMatch ? gscMatch[1] : envGsc.trim();
+const gscToken = parsedGsc && !parsedGsc.includes("example") ? parsedGsc : REAL_GSC_TOKEN;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
