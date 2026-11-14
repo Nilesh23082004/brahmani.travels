@@ -146,7 +146,7 @@ export default async function CarDetailPage({
               <div className="mt-6 flex flex-wrap gap-3">
                 <div className="px-3.5 py-1.5 rounded-xl bg-white border border-slate-200 shadow-sm flex items-center gap-2 text-sm font-semibold text-navy-deep">
                   <Users className="w-4 h-4 text-gold-dark" />
-                  <span>{car.specs.seats} Passenger Seats</span>
+                  <span>{car.specs.seatsDisplay || `${car.specs.seats} Passenger Seats`}</span>
                 </div>
                 <div className="px-3.5 py-1.5 rounded-xl bg-white border border-slate-200 shadow-sm flex items-center gap-2 text-sm font-semibold text-navy-deep">
                   <Sparkles className="w-4 h-4 text-emerald-600" />

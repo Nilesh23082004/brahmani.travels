@@ -48,6 +48,7 @@ export interface CarPage {
   h1: string;
   specs: {
     seats: number;
+    seatsDisplay?: string;
     type: string;
     ratePerKm: number;
     idealFor: string;
@@ -2191,6 +2192,40 @@ export const cars: CarPage[] = [
       {
         "q": "Is an advance booking required for 20-seater models?",
         "a": "Yes, during peak wedding and holiday seasons, we recommend booking at least 1-2 weeks in advance."
+      }
+    ]
+  },
+  {
+    "slug": "force-urbania",
+    "name": "Force Urbania (17-20 Seater)",
+    "h1": "Force Urbania 17-20 Seater Luxury Van on Rent in Ahmedabad",
+    "metaTitle": "Force Urbania on Rent Ahmedabad | ₹35/km – Brahmani Travels",
+    "metaDescription": "Hire luxury Force Urbania (17-20 seater) in Ahmedabad at ₹35/km. Premium reclining pushback seats, individual AC vents, luggage boot. Call +91 89801 79677.",
+    "specs": {
+      "seats": 20,
+      "seatsDisplay": "17-20 Passenger Seats",
+      "type": "Luxury Van",
+      "ratePerKm": 35,
+      "idealFor": "VIP corporate delegations, luxury family tours, destination weddings, and premium Gujarat Darshan trips."
+    },
+    "image": "/images/fleet/force-urbania-v2.webp",
+    "body": "Experience next-level luxury group travel with the all-new Force Urbania 17-20 Seater on rent in Ahmedabad from Brahmani Travels. Designed on a global modular platform with world-class Mercedes-derived powertrain technology, the Force Urbania redefines long-distance road journeys with unmatched passenger comfort, whisper-quiet cabin acoustics, and commanding road presence.\n\nWhether you are arranging executive VIP transfers from Sardar Vallabhbhai Patel International Airport (AMD) to GIFT City Gandhinagar, escorting family guests for a destination wedding in Udaipur or Mount Abu, or embarking on a spiritual pilgrimage across Gujarat's sacred temples (Dwarka, Somnath, Ambaji), the Force Urbania delivers first-class comfort for every passenger.\n\nKey Highlights of Force Urbania Luxury Van:\n- Seating Capacity: 17 to 20 passenger seating configurations with plush pushback reclining bucket seats and generous legroom.\n- Climate Control: Individual AC vents for every seat ensuring uniform, rapid cooling even during peak Gujarat summer temperatures.\n- Ride Quality: Modern independent front suspension and rear parabolic springs deliver a cloud-like ride across highways and rough roads.\n- Modern Amenities: USB charging sockets at every seat, panoramic sealed passenger windows for scenic viewing, high-roof walk-through cabin, and spacious dedicated luggage boot.\n- Safety First: Equipped with ABS with EBD, electronic stability program (ESP), roll-over mitigation, and dual airbags.\n\nAll Brahmani Travels Urbania vans come with verified, courteous, and route-experienced chauffeurs. Rates start from ₹35 per kilometre. Call Rajesh Prajapati at +91 89801 79677 to book your journey.",
+    "faqs": [
+      {
+        "q": "What is the per-km rate for Force Urbania on rent in Ahmedabad?",
+        "a": "Our tariff for the 17-20 seater Force Urbania starts at ₹35 per kilometre for outstation journeys. Toll, parking, and driver allowance are extra as per actuals."
+      },
+      {
+        "q": "How does Force Urbania compare to a standard Tempo Traveller?",
+        "a": "The Force Urbania is a next-generation luxury van offering superior suspension, significantly lower cabin noise, individual airplane-style AC consoles, USB charging at each seat, and much wider reclining bucket seats compared to conventional tempo travellers."
+      },
+      {
+        "q": "Can the 17-20 seater Urbania accommodate heavy luggage?",
+        "a": "Yes. The Urbania features a cavernous dedicated rear luggage boot plus roof luggage carrier capacity, making it ideal for NRI families, wedding shoppers, and corporate delegations with multiple large suitcases."
+      },
+      {
+        "q": "Is advance booking required for Force Urbania in Ahmedabad?",
+        "a": "Yes. Due to high demand for destination weddings, VIP transfers, and corporate conclaves, we recommend booking at least 3 to 7 days in advance."
       }
     ]
   }

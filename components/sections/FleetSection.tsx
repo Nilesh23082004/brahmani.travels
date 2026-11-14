@@ -58,15 +58,15 @@ function FleetCarCard({
         <CarImage
           src={car.image}
           carName={car.name}
-          alt={`${car.name} ${car.seats} seater for rent in Ahmedabad`}
+          alt={`${car.name} ${car.seatsDisplay || `${car.seats} seater`} for rent in Ahmedabad`}
           sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 33vw"
         >
           {/* Glass badges on the image */}
-          {/* Top-left: seat count ("17 Seats") */}
+          {/* Top-left: seat count ("17-20 Seats") */}
           <div className="absolute top-3 left-3 z-10 pointer-events-none">
             <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white/80 backdrop-blur text-xs font-semibold text-slate-800 shadow-sm border border-white/40">
               <Users className="w-3.5 h-3.5 text-slate-600" />
-              <span>{car.seats} Seats</span>
+              <span>{car.seatsDisplay || `${car.seats} Seats`}</span>
             </div>
           </div>
 

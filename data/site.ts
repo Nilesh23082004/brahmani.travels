@@ -58,7 +58,7 @@ export const siteConfig: SiteConfig = {
   footerTagline:
     "Ahmedabad's trusted cab, taxi & car rental service. Available 24/7 for city rides, airport transfers, outstation trips, and group tours across Gujarat and India.",
   description:
-    "Best cab, taxi & car rental service in Ahmedabad from ₹11/km. Swift Dzire, Innova Crysta, Tempo Traveller & buses. 24/7 service from Nava Naroda, Ahmedabad, Gujarat.",
+    "Best cab, taxi & car rental service in Ahmedabad from ₹11/km. Swift Dzire, Innova Crysta, Force Urbania, Tempo Traveller & buses. 24/7 service from Nava Naroda, Ahmedabad, Gujarat.",
   contactPerson: "Rajesh Prajapati",
   phone: "+91 89801 79677",
   phoneTel: "tel:+918980179677",

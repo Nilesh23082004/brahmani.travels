@@ -9,6 +9,7 @@ export interface Car {
   name: string;
   type: string;
   seats: number;
+  seatsDisplay?: string;
   features: string[];
   ratePerKm: number;
   image: string;
@@ -123,5 +124,22 @@ export const fleet: Car[] = [
     ratePerKm: 30,
     image: "/images/fleet/tempo-traveller-20-v2.webp",
     filterGroup: "10+ Seaters",
+  },
+  {
+    slug: "force-urbania",
+    name: "Force Urbania (17-20 Seater)",
+    type: "Luxury Van",
+    seats: 20,
+    seatsDisplay: "17-20 Seats",
+    features: [
+      "Plush Reclining Seats",
+      "Individual AC Vents",
+      "USB Charging at Every Seat",
+      "Air Suspension Comfort",
+    ],
+    ratePerKm: 35,
+    image: "/images/fleet/force-urbania-v2.webp",
+    filterGroup: "10+ Seaters",
+    badge: "Luxury Premium",
   },
 ];

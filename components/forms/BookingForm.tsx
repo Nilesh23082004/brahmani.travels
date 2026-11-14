@@ -350,7 +350,7 @@ export function BookingForm({
               >
                 {fleet.map((car) => (
                   <option key={car.slug} value={car.slug}>
-                    {car.name} ({car.seats} Seats) — ₹{car.ratePerKm}/Km
+                    {car.name} ({car.seatsDisplay || `${car.seats} Seats`}) — ₹{car.ratePerKm}/Km
                   </option>
                 ))}
               </select>

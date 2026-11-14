@@ -446,7 +446,7 @@ function BookingFormContent() {
                     >
                       {fleet.map((car) => (
                         <option key={car.slug} value={car.slug}>
-                          {car.name} — ₹{car.ratePerKm}/Km ({car.seats} Seats)
+                          {car.name} — ₹{car.ratePerKm}/Km ({car.seatsDisplay || `${car.seats} Seats`})
                         </option>
                       ))}
                     </select>
@@ -711,7 +711,7 @@ function BookingFormContent() {
             </span>
             <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-700 text-xs font-bold">
               <Users className="w-3.5 h-3.5 text-slate-500" />
-              <span>{selectedCar.seats} Seats</span>
+              <span>{selectedCar.seatsDisplay || `${selectedCar.seats} Seats`}</span>
             </div>
           </div>
 

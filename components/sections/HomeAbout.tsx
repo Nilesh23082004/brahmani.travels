@@ -60,6 +60,9 @@ export function HomeAbout() {
                 <strong>Force Tempo Travellers (11, 14, 17 &amp; 20 Seater):</strong> Starting from ₹23/km to ₹30/km. Luxury pushback seating, ice-cold twin AC blowers, and high-definition entertainment for large group tours.
               </li>
               <li>
+                <strong>Force Urbania (17-20 Seater Luxury Van):</strong> Starting at ₹35/km. Next-generation European styling, plush reclining bucket seats, individual AC vents, and ultra-smooth air-suspension comfort for executive delegations, VIP transfers, and luxury family travel.
+              </li>
+              <li>
                 <strong>25 to 56 Seater Luxury Buses:</strong> Available on custom request for school excursions, corporate conferences, and wedding guest transit across Gujarat.
               </li>
             </ul>
