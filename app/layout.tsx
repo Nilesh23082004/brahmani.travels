@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 import { SITE_URL } from "@/lib/constants";
 import { siteConfig } from "@/data/site";
@@ -122,51 +121,60 @@ export default function RootLayout({
       lang="en-IN"
       className={`${playfairDisplay.variable} ${plusJakartaSans.variable} scroll-smooth`}
     >
-      <body className="min-h-screen flex flex-col bg-soft-bg text-navy-deep font-sans antialiased selection:bg-gold selection:text-navy-deep overflow-x-hidden">
-        {/* Structured Data for SEO */}
-        <JsonLd />
-
-        {/* Google Analytics 4 */}
+      <head>
+        {/* Google Analytics 4 (gtag.js) in <head> for GSC & Analytics verification */}
         {GA_ID && (
           <>
-            <Script
+            <script
+              async
               src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-              strategy="afterInteractive"
             />
-            <Script id="gtag-init" strategy="afterInteractive">
-              {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${GA_ID}', { page_path: window.location.pathname });
-                ${GTM_ID ? `gtag('config', '${GTM_ID}');` : ""}
-              `}
-            </Script>
+            <script
+              id="google-analytics"
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', '${GA_ID}', { page_path: window.location.pathname });
+                  ${GTM_ID ? `gtag('config', '${GTM_ID}');` : ""}
+                `,
+              }}
+            />
           </>
         )}
 
-        {/* Google Tag Manager */}
+        {/* Google Tag Manager in <head> */}
         {GTM_ID && (
-          <>
-            <Script id="gtm-container" strategy="afterInteractive">
-              {`
+          <script
+            id="google-tag-manager"
+            dangerouslySetInnerHTML={{
+              __html: `
                 (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
                 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
                 })(window,document,'script','dataLayer','${GTM_ID}');
-              `}
-            </Script>
-            <noscript>
-              <iframe
-                src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
-                height="0"
-                width="0"
-                style={{ display: "none", visibility: "hidden" }}
-              />
-            </noscript>
-          </>
+              `,
+            }}
+          />
         )}
+      </head>
+      <body className="min-h-screen flex flex-col bg-soft-bg text-navy-deep font-sans antialiased selection:bg-gold selection:text-navy-deep overflow-x-hidden">
+        {/* Google Tag Manager (noscript) immediately after opening <body> */}
+        {GTM_ID && (
+          <noscript>
+            <iframe
+              src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+              height="0"
+              width="0"
+              style={{ display: "none", visibility: "hidden" }}
+            />
+          </noscript>
+        )}
+
+        {/* Structured Data for SEO */}
+        <JsonLd />
 
         {/* Branded First-Load Splash Intro */}
         <BrandedPageIntro />
