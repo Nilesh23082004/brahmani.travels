@@ -57,8 +57,14 @@ export function JsonLd() {
       {
         "@type": "WebSite",
         "@id": `${SITE_URL}/#website`,
-        url: SITE_URL,
+        url: `${SITE_URL}/`,
         name: siteConfig.name,
+        alternateName: [
+          "Brahmani Travels",
+          "Brahmani Travels Ahmedabad",
+          "Brahmani Travels Nava Naroda",
+          "Brahmani Travels Cab Service",
+        ],
         description: siteConfig.description,
         publisher: {
           "@id": `${SITE_URL}/#organization`,

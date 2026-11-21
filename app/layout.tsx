@@ -37,6 +37,12 @@ const gscToken = parsedGsc && !parsedGsc.includes("example") ? parsedGsc : REAL_
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+  applicationName: siteConfig.name,
+  appleWebApp: {
+    title: siteConfig.name,
+    capable: true,
+    statusBarStyle: "default",
+  },
   title: {
     default: "Brahmani Travels | Best Cab, Taxi & Car Rental in Ahmedabad – From ₹11/km",
     template: `%s | Brahmani Travels Ahmedabad`,
