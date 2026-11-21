@@ -148,7 +148,7 @@ function BookingFormContent() {
 
       const messageText = msgLines.join("\n");
       const cleanBusinessNumber =
-        siteConfig.phoneRaw.replace(/\D/g, "") || "918980179677";
+        siteConfig.phoneRaw.replace(/\D/g, "") || "918980141287";
       const targetWhatsAppUrl = `https://wa.me/${cleanBusinessNumber}?text=${encodeURIComponent(
         messageText
       )}`;
@@ -321,7 +321,7 @@ function BookingFormContent() {
                         className="inline-flex items-center gap-1.5 font-bold text-xs bg-rose-600 text-white px-3 py-1.5 rounded-lg shadow-sm hover:bg-rose-700"
                       >
                         <PhoneCall className="w-3.5 h-3.5" />
-                        <span>Call +91 89801 79677</span>
+                        <span>Call +91 89801 41287</span>
                       </a>
                     </div>
                   </div>
@@ -812,7 +812,7 @@ function BookingFormContent() {
               <Button
                 variant="outline"
                 size="sm"
-                href={siteConfig.whatsAppUrl || "https://wa.me/918980179677"}
+                href={siteConfig.whatsAppUrl || "https://wa.me/918980141287"}
                 target="_blank"
                 rel="noopener noreferrer"
                 leftIcon={<WhatsAppIcon className="w-4 h-4 text-emerald-600" />}

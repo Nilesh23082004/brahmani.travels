@@ -210,7 +210,7 @@ export function FaqSection({
               <Button
                 variant="outline"
                 size="md"
-                href={siteConfig.whatsAppUrl || "https://wa.me/918980179677"}
+                href={siteConfig.whatsAppUrl || "https://wa.me/918980141287"}
                 target="_blank"
                 rel="noopener noreferrer"
                 leftIcon={<WhatsAppIcon className="w-4 h-4 text-emerald-600" />}

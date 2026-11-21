@@ -80,7 +80,7 @@ export function HomeContact() {
                       rel="noopener noreferrer"
                       className="font-bold text-emerald-700 hover:text-emerald-800 transition-colors text-sm"
                     >
-                      Chat on WhatsApp (+91 89801 79677)
+                      Chat on WhatsApp (+91 89801 41287)
                     </a>
                   </div>
                 </div>

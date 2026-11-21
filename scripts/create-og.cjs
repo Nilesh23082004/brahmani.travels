@@ -63,7 +63,7 @@ const svgOverlay = Buffer.from(`
 
   <rect x="840" y="460" width="260" height="60" rx="16" fill="#C9962E" fill-opacity="0.25" stroke="url(#gold)" stroke-width="2"/>
   <text x="865" y="498" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#E8C468">
-    📞 +91 89801 79677
+    📞 +91 89801 41287
   </text>
 </svg>
 `);

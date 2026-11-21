@@ -20,7 +20,7 @@ import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 export const metadata: Metadata = {
   title: `Contact Brahmani Travels Ahmedabad | 24/7 Cab & Taxi Booking`,
   description:
-    "Contact Brahmani Travels at B-105 Nand Vatika, Nava Naroda, Ahmedabad. 24/7 booking support for local cabs, airport transfers, outstation taxis & buses. Call +91 89801 79677.",
+    "Contact Brahmani Travels at B-105 Nand Vatika, Nava Naroda, Ahmedabad. 24/7 booking support for local cabs, airport transfers, outstation taxis & buses. Call +91 89801 41287.",
   alternates: {
     canonical: `${SITE_URL}/contact`,
   },
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     url: `${SITE_URL}/contact`,
     title: `Contact Brahmani Travels Ahmedabad | 24/7 Cab Booking`,
     description:
-      "Contact Brahmani Travels at B-105 Nand Vatika, Nava Naroda, Ahmedabad. Call +91 89801 79677.",
+      "Contact Brahmani Travels at B-105 Nand Vatika, Nava Naroda, Ahmedabad. Call +91 89801 41287.",
     siteName: siteConfig.name,
     images: [
       {
@@ -167,7 +167,7 @@ export default function ContactPage() {
                   <Button
                     variant="outline"
                     size="sm"
-                    href={siteConfig.whatsAppUrl || "https://wa.me/918980179677"}
+                    href={siteConfig.whatsAppUrl || "https://wa.me/918980141287"}
                     target="_blank"
                     rel="noopener noreferrer"
                     leftIcon={<WhatsAppIcon className="w-4 h-4 text-emerald-600" />}

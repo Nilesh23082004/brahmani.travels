@@ -60,11 +60,11 @@ export const siteConfig: SiteConfig = {
   description:
     "Best cab, taxi & car rental service in Ahmedabad from ₹11/km. Swift Dzire, Innova Crysta, Force Urbania, Tempo Traveller & buses. 24/7 service from Nava Naroda, Ahmedabad, Gujarat.",
   contactPerson: "Rajesh Prajapati",
-  phone: "+91 89801 79677",
-  phoneTel: "tel:+918980179677",
-  phoneRaw: "+918980179677",
-  whatsAppUrl: "https://wa.me/918980179677",
-  alternatePhone: "+91 89801 79677",
+  phone: "+91 89801 41287",
+  phoneTel: "tel:+918980141287",
+  phoneRaw: "+918980141287",
+  whatsAppUrl: "https://wa.me/918980141287",
+  alternatePhone: "+91 89801 41287",
   email: "brahmanitravels@gmail.com",
   address: {
     line: "B-105 Nand Vatika, Near Mevada Green Party Plot, Nava Naroda",
@@ -93,7 +93,7 @@ export const siteConfig: SiteConfig = {
   socialLinks: [
     {
       platform: "WhatsApp",
-      href: "https://wa.me/918980179677",
+      href: "https://wa.me/918980141287",
       iconName: "MessageCircle",
     },
     {

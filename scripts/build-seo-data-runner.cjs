@@ -59,7 +59,7 @@ Upon arriving in Udaipur, have your chauffeur drop you near your heritage hotel 
 4. Bagore Ki Haveli: Enjoy the evening Dharohar cultural folk dance show along the historic Gangaur Ghat.
 5. Saheliyon-ki-Bari: Tranquil gardens featuring marble fountains, lotus pools, and pavilions built for royal maidens.
 
-For reliable door-to-door cab bookings from Ahmedabad to Udaipur, call Brahmani Travels at +91 89801 79677 or book directly through WhatsApp.`
+For reliable door-to-door cab bookings from Ahmedabad to Udaipur, call Brahmani Travels at +91 89801 41287 or book directly through WhatsApp.`
   },
   {
     slug: "tempo-traveller-vs-bus-for-group-trips",
@@ -108,7 +108,7 @@ Modern Force Tempo Travellers are outfitted with amenities comparable to luxury 
 - Choose a Tempo Traveller if: Your group consists of 8 to 20 people, you are visiting hill stations, historic city centres, or holy temples with tight parking, or you want maximum itinerary flexibility.
 - Choose a Luxury Bus if: Your group exceeds 25 people, you are transporting an entire wedding party between banquet halls, or you are managing school/corporate conventions.
 
-At Brahmani Travels, we operate both luxury Tempo Travellers and heavy tourist buses across Gujarat. Call Rajesh Prajapati on +91 89801 79677 for honest advice and customized group package quotes.`
+At Brahmani Travels, we operate both luxury Tempo Travellers and heavy tourist buses across Gujarat. Call Rajesh Prajapati on +91 89801 41287 for honest advice and customized group package quotes.`
   },
   {
     slug: "best-weekend-getaways-from-ahmedabad-by-car",
@@ -169,7 +169,7 @@ The only natural habitat in the world where you can witness the majestic Asiatic
 - Recommended Duration: 2 to 3 days. (Note: Safari permits must be booked online in advance).
 
 ### Tips for Booking Your Weekend Road Trip
-When planning a weekend getaway, driving yourself can leave you exhausted by Monday morning. Booking a chauffeur-driven cab with Brahmani Travels ensures you arrive refreshed. Our drivers handle highway navigation, parking, and luggage while you relax with family. Call +91 89801 79677 to book your weekend car today.`
+When planning a weekend getaway, driving yourself can leave you exhausted by Monday morning. Booking a chauffeur-driven cab with Brahmani Travels ensures you arrive refreshed. Our drivers handle highway navigation, parking, and luggage while you relax with family. Call +91 89801 41287 to book your weekend car today.`
   },
   {
     slug: "ahmedabad-airport-taxi-fare-guide",
@@ -223,7 +223,7 @@ To Gandhinagar & Outstation Cities:
 
 ### How to Pre-Book Your Airport Cab
 Booking with Brahmani Travels takes under two minutes:
-1. Call or WhatsApp +91 89801 79677.
+1. Call or WhatsApp +91 89801 41287.
 2. Share your flight number, arrival date & time, destination address, and number of passengers.
 3. Receive instant vehicle assignment with driver name and phone number.
 
@@ -269,7 +269,7 @@ Before signing a contract or paying an advance:
 ### 5. Why Choose Brahmani Travels for Ahmedabad Weddings
 At Brahmani Travels, owner Rajesh Prajapati personally oversees all wedding bookings. We understand the sanctity of muhurat timings and the importance of warm Gujarati hospitality. Our vehicles arrive 30 minutes early, spotless, fully air-conditioned, and piloted by courteous chauffeurs.
 
-To discuss your wedding transport requirements and receive a customized package quote, call +91 89801 79677 today.`
+To discuss your wedding transport requirements and receive a customized package quote, call +91 89801 41287 today.`
   },
   {
     slug: "ahmedabad-to-somnath-dwarka-3-day-taxi-itinerary",
@@ -332,7 +332,7 @@ Here is an expertly crafted 3-Day / 2-Night taxi itinerary from Ahmedabad to Som
 - Toyota Innova Crysta (7-Seater Luxury SUV): ~₹19,000 – ₹22,000 all-inclusive estimate.
 - Tempo Traveller (14-Seater Luxury): ~₹26,000 – ₹29,000 all-inclusive estimate.
 
-To book your Somnath and Dwarka pilgrimage taxi with Brahmani Travels, call +91 89801 79677 today.`
+To book your Somnath and Dwarka pilgrimage taxi with Brahmani Travels, call +91 89801 41287 today.`
   },
   {
     slug: "kutch-rann-utsav-trip-from-ahmedabad-by-car",
@@ -386,7 +386,7 @@ Because the Great Rann lies adjacent to the international border with Pakistan, 
 ### Book Your Kutch Taxi with Brahmani Travels
 Winter nights in Kutch can drop below 10°C, and long drives across desert expanses require a reliable, heated/AC vehicle with an experienced driver who knows desert checkpoints. 
 
-Brahmani Travels provides premium Swift Dzire, Maruti Ertiga, Toyota Innova Crysta, and luxury Tempo Travellers for Kutch road trips. Call Rajesh Prajapati on +91 89801 79677 to lock in your Rann Utsav travel dates.`
+Brahmani Travels provides premium Swift Dzire, Maruti Ertiga, Toyota Innova Crysta, and luxury Tempo Travellers for Kutch road trips. Call Rajesh Prajapati on +91 89801 41287 to lock in your Rann Utsav travel dates.`
   },
   {
     slug: "statue-of-unity-trip-from-ahmedabad-taxi-guide",
@@ -440,7 +440,7 @@ Because private vehicles are parked at centralized designated parking terminals 
 - Toyota Innova Crysta (7-Seater Luxury): ~₹3,600 – ₹4,200 base fare + tolls
 - Force Tempo Traveller (14-Seater): ~₹4,800 – ₹5,500 base fare + tolls
 
-Enjoy a hassle-free, memorable visit to the Statue of Unity with Brahmani Travels. Call +91 89801 79677 to book your cab today.`
+Enjoy a hassle-free, memorable visit to the Statue of Unity with Brahmani Travels. Call +91 89801 41287 to book your cab today.`
   },
   {
     slug: "innova-vs-innova-crysta-which-to-rent",
@@ -506,7 +506,7 @@ When split among 6 passengers, the price difference between the two models works
 - Choose the Classic Toyota Innova (₹15/km) if: You are on a budget, taking a straightforward highway journey (like Ahmedabad to Vadodara or Rajkot), or planning a long multi-day pilgrimage where practical utility matters most.
 - Choose the Toyota Innova Crysta (₹18/km) if: You are traveling with elderly parents, corporate executives, or overseas NRI family; attending a wedding; heading into mountain ghats; or simply want the most luxurious, comfortable ride available on Indian roads.
 
-At Brahmani Travels, both vehicles are maintained in pristine mechanical condition, sanitized before every trip, and driven by courteous chauffeurs. Call +91 89801 79677 to reserve your Innova today.`
+At Brahmani Travels, both vehicles are maintained in pristine mechanical condition, sanitized before every trip, and driven by courteous chauffeurs. Call +91 89801 41287 to reserve your Innova today.`
   },
   {
     slug: "things-to-check-before-booking-outstation-cab",
@@ -559,9 +559,9 @@ What happens if a tire punctures or an alternator fails 200 km from Ahmedabad? A
 If the prevailing market rate for an Innova Crysta is ₹18/km and a broker offers it to you for ₹12/km, be extremely cautious. Artificially cheap quotes usually result in sub-standard, poorly maintained vehicles, unverified novice drivers, or exorbitant hidden add-ons midway through your journey.
 
 ### 10. Book Directly with an Established Local Agency
-Rather than dealing with faceless third-party online booking aggregators where calls are answered by offshore call centres, book with a locally rooted family-owned operator like Brahmani Travels. Having the direct phone number of the business owner (Rajesh Prajapati: +91 89801 79677) ensures accountability, personalized care, and instant problem resolution.
+Rather than dealing with faceless third-party online booking aggregators where calls are answered by offshore call centres, book with a locally rooted family-owned operator like Brahmani Travels. Having the direct phone number of the business owner (Rajesh Prajapati: +91 89801 41287) ensures accountability, personalized care, and instant problem resolution.
 
-Safe travels start with smart choices. Call Brahmani Travels at +91 89801 79677 for your next outstation journey.`
+Safe travels start with smart choices. Call Brahmani Travels at +91 89801 41287 for your next outstation journey.`
   }
 ];
 

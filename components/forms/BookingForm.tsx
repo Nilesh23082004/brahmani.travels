@@ -140,7 +140,7 @@ export function BookingForm({
 
       const messageText = msgLines.join("\n");
       const cleanBusinessNumber =
-        siteConfig.phoneRaw.replace(/\D/g, "") || "918980179677";
+        siteConfig.phoneRaw.replace(/\D/g, "") || "918980141287";
       const targetWhatsAppUrl = `https://wa.me/${cleanBusinessNumber}?text=${encodeURIComponent(
         messageText
       )}`;

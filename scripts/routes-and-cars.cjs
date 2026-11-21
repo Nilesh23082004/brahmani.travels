@@ -507,7 +507,7 @@ The drive from Ahmedabad to ${r.name} traverses the ${r.highway}. Our commercial
 3. Transparent Per-Kilometre Billing: Rates start at ₹11/km for sedans and ₹13/km for Ertiga with zero hidden charges.
 4. Flexible Travel: Halt at clean highway rest stops, scenic viewpoints, and heritage landmarks at your leisure.
 
-Book your private taxi from Ahmedabad to ${r.name} today. Call Rajesh Prajapati on +91 89801 79677 or message us on WhatsApp for an instant, guaranteed quote.`
+Book your private taxi from Ahmedabad to ${r.name} today. Call Rajesh Prajapati on +91 89801 41287 or message us on WhatsApp for an instant, guaranteed quote.`
   };
 });
 
@@ -517,7 +517,7 @@ const carsData = [
     name: "Swift Dzire",
     h1: "Maruti Suzuki Swift Dzire on Rent in Ahmedabad",
     metaTitle: "Swift Dzire on Rent in Ahmedabad | ₹11/km Sedan Taxi – Brahmani Travels",
-    metaDescription: "Book Maruti Swift Dzire on rent in Ahmedabad from ₹11/km. 4-seater sedan, clean AC, verified driver for local & outstation trips. Call +91 89801 79677.",
+    metaDescription: "Book Maruti Swift Dzire on rent in Ahmedabad from ₹11/km. 4-seater sedan, clean AC, verified driver for local & outstation trips. Call +91 89801 41287.",
     specs: {
       seats: 4,
       type: "Sedan",
@@ -540,7 +540,7 @@ Ideal Use Cases:
 - Punctual 24/7 airport drops and pickups at SVPI Airport.
 - Budget-friendly outstation road trips to Udaipur, Vadodara, Mount Abu, and Somnath.
 
-Fares start from just ₹11 per kilometre. Call Brahmani Travels at +91 89801 79677 for instant booking.`,
+Fares start from just ₹11 per kilometre. Call Brahmani Travels at +91 89801 41287 for instant booking.`,
     faqs: [
       { q: "What is the per-km rate for Swift Dzire in Ahmedabad?", a: "Our rate for Swift Dzire is ₹11 per kilometre for outstation travel, subject to standard minimum daily kilometer norms." },
       { q: "How many suitcases can fit in the Swift Dzire trunk?", a: "The Dzire comfortably accommodates 2 medium-to-large suitcases along with 2 soft backpacks." },
@@ -552,7 +552,7 @@ Fares start from just ₹11 per kilometre. Call Brahmani Travels at +91 89801 79
     name: "Maruti Suzuki Ertiga",
     h1: "Maruti Suzuki Ertiga on Rent in Ahmedabad",
     metaTitle: "Ertiga on Rent in Ahmedabad | ₹13/km 6-Seater MUV – Brahmani Travels",
-    metaDescription: "Rent Maruti Suzuki Ertiga in Ahmedabad at ₹13/km. Spacious 6-seater AC cab with driver for family trips, outstation tours & airport drop. Call +91 89801 79677.",
+    metaDescription: "Rent Maruti Suzuki Ertiga in Ahmedabad at ₹13/km. Spacious 6-seater AC cab with driver for family trips, outstation tours & airport drop. Call +91 89801 41287.",
     specs: {
       seats: 6,
       type: "MUV",
@@ -575,7 +575,7 @@ Ideal Use Cases:
 - Saurashtra temple circuits (Somnath, Dwarka, Girnar).
 - Airport transfers for families returning from international flights with multiple large suitcases.
 
-Fares start from just ₹13 per kilometre. Call +91 89801 79677 to book your Ertiga.`,
+Fares start from just ₹13 per kilometre. Call +91 89801 41287 to book your Ertiga.`,
     faqs: [
       { q: "How many passengers can travel comfortably in an Ertiga?", a: "The Ertiga seats up to 6 passengers comfortably. For maximum luggage space on outstation trips, it is ideal for 4 to 5 passengers." },
       { q: "Does the Ertiga have rear air conditioning vents?", a: "Yes, the Ertiga features roof-mounted AC vents with separate fan speed controls for the middle and rear rows." },
@@ -587,7 +587,7 @@ Fares start from just ₹13 per kilometre. Call +91 89801 79677 to book your Ert
     name: "Toyota Innova",
     h1: "Toyota Innova on Rent in Ahmedabad",
     metaTitle: "Toyota Innova on Rent in Ahmedabad | ₹15/km 7-Seater SUV – Brahmani Travels",
-    metaDescription: "Hire Toyota Innova on rent in Ahmedabad from ₹15/km. Reliable 7-seater SUV with expert chauffeur for outstation tours & highway road trips. Call +91 89801 79677.",
+    metaDescription: "Hire Toyota Innova on rent in Ahmedabad from ₹15/km. Reliable 7-seater SUV with expert chauffeur for outstation tours & highway road trips. Call +91 89801 41287.",
     specs: {
       seats: 7,
       type: "SUV",
@@ -610,7 +610,7 @@ Ideal Use Cases:
 - Rajasthan heritage tours (Udaipur, Jodhpur, Mount Abu).
 - Corporate field visits and industrial tours across Gujarat.
 
-Fares start from ₹15 per kilometre. Reserve your Toyota Innova by calling +91 89801 79677.`,
+Fares start from ₹15 per kilometre. Reserve your Toyota Innova by calling +91 89801 41287.`,
     faqs: [
       { q: "What is the per-km rate for Toyota Innova?", a: "Our rate for the classic 7-seater Toyota Innova is ₹15 per kilometre." },
       { q: "Is the Innova comfortable for elderly family members?", a: "Yes, the Innova is renowned for its plush cushioning, wide doors, and upright seating posture that relieves knee and back pressure." },
@@ -622,7 +622,7 @@ Fares start from ₹15 per kilometre. Reserve your Toyota Innova by calling +91 
     name: "Chevrolet Tavera",
     h1: "Chevrolet Tavera on Rent in Ahmedabad",
     metaTitle: "Chevrolet Tavera on Rent in Ahmedabad | ₹16/km 9-Seater – Brahmani Travels",
-    metaDescription: "Rent 9-seater Chevrolet Tavera in Ahmedabad at ₹16/km. Affordable group vehicle with driver for village visits, picnics & temple tours. Call +91 89801 79677.",
+    metaDescription: "Rent 9-seater Chevrolet Tavera in Ahmedabad at ₹16/km. Affordable group vehicle with driver for village visits, picnics & temple tours. Call +91 89801 41287.",
     specs: {
       seats: 9,
       type: "SUV",
@@ -645,7 +645,7 @@ Ideal Use Cases:
 - Religious sanghs and community temple yatras (Dakor, Pavagadh, Ambaji).
 - Budget group picnics and social events.
 
-Fares start from ₹16 per kilometre. Call Brahmani Travels at +91 89801 79677.`,
+Fares start from ₹16 per kilometre. Call Brahmani Travels at +91 89801 41287.`,
     faqs: [
       { q: "How many passengers can legally travel in the Chevrolet Tavera?", a: "Our commercial Tavera is registered and certified for up to 9 passengers plus the driver." },
       { q: "What is the per-km rate for Chevrolet Tavera?", a: "Our rate is ₹16 per kilometre." },
@@ -657,7 +657,7 @@ Fares start from ₹16 per kilometre. Call Brahmani Travels at +91 89801 79677.`
     name: "Toyota Innova Crysta",
     h1: "Toyota Innova Crysta on Rent in Ahmedabad",
     metaTitle: "Innova Crysta on Rent in Ahmedabad | ₹18/km Luxury 7-Seater – Brahmani Travels",
-    metaDescription: "Book luxury Toyota Innova Crysta on rent in Ahmedabad from ₹18/km. Premium captain seats, rear AC blowers, verified executive chauffeur. Call +91 89801 79677.",
+    metaDescription: "Book luxury Toyota Innova Crysta on rent in Ahmedabad from ₹18/km. Premium captain seats, rear AC blowers, verified executive chauffeur. Call +91 89801 41287.",
     specs: {
       seats: 7,
       type: "SUV",
@@ -681,7 +681,7 @@ Ideal Use Cases:
 - NRI family holidays across Gujarat and Rajasthan.
 - Long-distance road trips to Udaipur, Mount Abu, and Statue of Unity.
 
-Fares start from ₹18 per kilometre. Experience true road luxury — call Brahmani Travels on +91 89801 79677.`,
+Fares start from ₹18 per kilometre. Experience true road luxury — call Brahmani Travels on +91 89801 41287.`,
     faqs: [
       { q: "Does the Innova Crysta have 2nd-row captain seats?", a: "Yes, our luxury Innova Crystas feature dedicated 2nd-row captain seats with individual slide, recline, and armrests." },
       { q: "What is the per-km rate for Innova Crysta in Ahmedabad?", a: "Our rate is ₹18 per kilometre for outstation travel." },
@@ -693,7 +693,7 @@ Fares start from ₹18 per kilometre. Experience true road luxury — call Brahm
     name: "Tempo Traveller (11 Seater)",
     h1: "11 Seater Luxury Tempo Traveller on Rent in Ahmedabad",
     metaTitle: "11 Seater Tempo Traveller on Rent Ahmedabad | ₹23/km – Brahmani Travels",
-    metaDescription: "Hire 11-seater luxury Tempo Traveller in Ahmedabad from ₹23/km. 1x1 Maharaja pushback seats, dual AC, music system for family tours. Call +91 89801 79677.",
+    metaDescription: "Hire 11-seater luxury Tempo Traveller in Ahmedabad from ₹23/km. 1x1 Maharaja pushback seats, dual AC, music system for family tours. Call +91 89801 41287.",
     specs: {
       seats: 11,
       type: "Tempo Traveller",
@@ -711,7 +711,7 @@ Key Specifications & Features:
 - High-Output Twin AC: Dual compressors keep the cabin cool even during scorching summer heat.
 - Entertainment: LED TV with Android streaming, Bluetooth stereo, and microphone.
 
-Fares start at ₹23/km. Call +91 89801 79677 to book.`,
+Fares start at ₹23/km. Call +91 89801 41287 to book.`,
     faqs: [
       { q: "What is the seating layout of the 11-seater Tempo Traveller?", a: "It features a spacious 1x1 Maharaja configuration with wide middle aisles and individual luxury captain seats." },
       { q: "What is the per-km rate?", a: "The rate is ₹23 per kilometre." },
@@ -723,7 +723,7 @@ Fares start at ₹23/km. Call +91 89801 79677 to book.`,
     name: "Tempo Traveller (14 Seater)",
     h1: "14 Seater Luxury Tempo Traveller on Rent in Ahmedabad",
     metaTitle: "14 Seater Tempo Traveller on Rent Ahmedabad | ₹24/km – Brahmani Travels",
-    metaDescription: "Rent 14-seater Force Tempo Traveller in Ahmedabad at ₹24/km. Pushback reclining seats, separate luggage compartment, powerful AC. Call +91 89801 79677.",
+    metaDescription: "Rent 14-seater Force Tempo Traveller in Ahmedabad at ₹24/km. Pushback reclining seats, separate luggage compartment, powerful AC. Call +91 89801 41287.",
     specs: {
       seats: 14,
       type: "Tempo Traveller",
@@ -741,7 +741,7 @@ Key Specifications & Features:
 - Dedicated Luggage Boot: Ample space for suitcases, backpacks, and supplies.
 - Clean Entertainment System: High-definition audio and video entertainment.
 
-Fares start at ₹24/km. Call +91 89801 79677.`,
+Fares start at ₹24/km. Call +91 89801 41287.`,
     faqs: [
       { q: "What is the per-km rate for 14-seater Tempo Traveller?", a: "Our rate is ₹24 per kilometre." },
       { q: "Is there enough luggage space for 14 passengers?", a: "Yes, there is a dedicated rear boot plus an optional roof luggage carrier." },
@@ -753,7 +753,7 @@ Fares start at ₹24/km. Call +91 89801 79677.`,
     name: "Tempo Traveller (17 Seater)",
     h1: "17 Seater Luxury Tempo Traveller on Rent in Ahmedabad",
     metaTitle: "17 Seater Tempo Traveller on Rent Ahmedabad | ₹25/km – Brahmani Travels",
-    metaDescription: "Book 17-seater luxury AC Tempo Traveller in Ahmedabad from ₹25/km. High roof, individual reading lights, LED entertainment system. Call +91 89801 79677.",
+    metaDescription: "Book 17-seater luxury AC Tempo Traveller in Ahmedabad from ₹25/km. High roof, individual reading lights, LED entertainment system. Call +91 89801 41287.",
     specs: {
       seats: 17,
       type: "Tempo Traveller",
@@ -771,7 +771,7 @@ Key Specifications & Features:
 - Twin-Compressor AC: Unmatched cooling performance across all rows.
 - USB Charging & LED Lights: Modern convenience for every passenger.
 
-Fares start at ₹25/km. Call +91 89801 79677 to book.`,
+Fares start at ₹25/km. Call +91 89801 41287 to book.`,
     faqs: [
       { q: "What is the per-km rate for 17-seater Tempo Traveller?", a: "Our rate is ₹25 per kilometre." },
       { q: "Can we hire this for a 4-day Gujarat pilgrimage tour?", a: "Yes, we regularly provide 17-seaters for Somnath, Dwarka, and Gir circuits." },
@@ -783,7 +783,7 @@ Fares start at ₹25/km. Call +91 89801 79677 to book.`,
     name: "Tempo Traveller (20 Seater)",
     h1: "20 Seater Grand Tempo Traveller on Rent in Ahmedabad",
     metaTitle: "20 Seater Tempo Traveller on Rent Ahmedabad | ₹30/km – Brahmani Travels",
-    metaDescription: "Hire 20-seater Force Tempo Traveller in Ahmedabad at ₹30/km. Maximum seating capacity, twin AC blowers, experienced highway driver. Call +91 89801 79677.",
+    metaDescription: "Hire 20-seater Force Tempo Traveller in Ahmedabad at ₹30/km. Maximum seating capacity, twin AC blowers, experienced highway driver. Call +91 89801 41287.",
     specs: {
       seats: 20,
       type: "Tempo Traveller",
@@ -801,7 +801,7 @@ Key Specifications & Features:
 - Heavy-Duty Cooling: Twin AC blowers designed for large cabin volumes.
 - Verified Chauffeurs: Experienced commercial drivers with deep route familiarity.
 
-Fares start at ₹30/km. Call +91 89801 79677 to book.`,
+Fares start at ₹30/km. Call +91 89801 41287 to book.`,
     faqs: [
       { q: "What is the rate per km for a 20-seater Tempo Traveller?", a: "Our rate is ₹30 per kilometre for outstation journeys." },
       { q: "Can a 20-seater Tempo Traveller navigate narrow old-city streets?", a: "Yes, it has much better maneuverability than a full-size bus and can access most hotel driveways." },

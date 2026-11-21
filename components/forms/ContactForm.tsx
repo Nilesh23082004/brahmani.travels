@@ -68,7 +68,7 @@ export function ContactForm({ className }: ContactFormProps) {
       ].filter(Boolean);
 
       const cleanBusinessNumber =
-        siteConfig.phoneRaw.replace(/\D/g, "") || "918980179677";
+        siteConfig.phoneRaw.replace(/\D/g, "") || "918980141287";
       const targetWhatsAppUrl = `https://wa.me/${cleanBusinessNumber}?text=${encodeURIComponent(
         msgLines.join("\n")
       )}`;

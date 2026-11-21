@@ -15,7 +15,7 @@ export const faqs: FAQItem[] = [
     id: "how-to-book",
     question: "How can I book a cab or car with Brahmani Travels?",
     answer:
-      "Booking with us is direct, fast, and 100% transparent with zero middleman commissions. You can call our 24/7 hotline at +91 89801 79677, message us directly on WhatsApp at +91 89801 79677 with your pickup location, destination, and preferred vehicle, or fill out the online booking form on our website. We provide immediate vehicle confirmation and chauffeur details.",
+      "Booking with us is direct, fast, and 100% transparent with zero middleman commissions. You can call our 24/7 hotline at +91 89801 41287, message us directly on WhatsApp at +91 89801 41287 with your pickup location, destination, and preferred vehicle, or fill out the online booking form on our website. We provide immediate vehicle confirmation and chauffeur details.",
   },
   {
     id: "rates-and-pricing",
@@ -33,7 +33,7 @@ export const faqs: FAQItem[] = [
     id: "cancel-or-modify",
     question: "What is your cancellation and rescheduling policy?",
     answer:
-      "We provide flexible, customer-friendly cancellation and rescheduling. If your flight or travel plan changes, notify us via phone call or WhatsApp at +91 89801 79677 at least 12–24 hours prior to scheduled pickup for a full waiver with zero penalty. We can also adjust pickup times or change the vehicle category on request.",
+      "We provide flexible, customer-friendly cancellation and rescheduling. If your flight or travel plan changes, notify us via phone call or WhatsApp at +91 89801 41287 at least 12–24 hours prior to scheduled pickup for a full waiver with zero penalty. We can also adjust pickup times or change the vehicle category on request.",
   },
   {
     id: "airport-transfers",

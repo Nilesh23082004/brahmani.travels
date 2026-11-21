@@ -161,7 +161,7 @@ export function Navbar() {
             <div className="flex items-center gap-1.5 sm:gap-2.5">
               {/* WhatsApp Button with Official WhatsApp Icon */}
               <a
-                href={siteConfig.whatsAppUrl || "https://wa.me/918980179677"}
+                href={siteConfig.whatsAppUrl || "https://wa.me/918980141287"}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Chat on WhatsApp"
